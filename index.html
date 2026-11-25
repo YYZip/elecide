@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ELECIDE 元素悖灭</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@350;700&family=Noto+Serif+SC:wght@350;500;700&family=Noto+Sans+SC:wght@350&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body>
+
+<div class="rain" id="rain" aria-hidden="true"></div>
+
+<div class="glyph-layer glyph-layer--left" id="glyph-left" aria-hidden="true"></div>
+<div class="glyph-layer glyph-layer--right" id="glyph-right" aria-hidden="true"></div>
+
+<svg class="thread" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
+  <path class="thread__path" id="thread-path" d="M50 0 L50 1000" />
+</svg>
+
+<div class="curtain" id="curtain" aria-hidden="true"></div>
+
+<button class="mobile-header is-home" id="mobile-header" type="button" aria-label="返回首页">
+  <span class="mobile-header__cn">悖滅</span>
+  <span class="mobile-header__en">ELECIDE</span>
+</button>
+
+<main class="stage" id="stage">
+  <div class="chapter-head" id="chapter-head" style="display:none" aria-live="polite">
+    <div class="chapter-head__text" id="chapter-text">
+      <div class="chapter-head__cn" id="chapter-cn">元素编码</div>
+      <div class="chapter-head__en" id="chapter-en">ELECODE</div>
+    </div>
+  </div>
+
+  <section class="panel is-active" data-panel="intro" id="panel-intro">
+    <div class="watermark" style="--o:.020; --d:-4s; right:4vw;  top:4vh;   --fs:36vw;" aria-hidden="true">化</div>
+    <div class="watermark" style="--o:.018; --d:-13s; left:20vw; bottom:2vh; --fs:24vw;" aria-hidden="true">学</div>
+
+    <div class="hero__block">
+      <h1 class="glitch hero__main" data-text="元素编码">元素悖灭</h1>
+      <p class="hero__ghost" aria-hidden="true">元素编码</p>
+    </div>
+  </section>
+
+  <section class="panel" data-panel="text" id="panel-text">
+    <div class="watermark" style="--o:.018; --d:-5s;  right:6vw; top:4vh;    --fs:28vw;" aria-hidden="true">文</div>
+    <div class="watermark" style="--o:.012; --d:-14s; left:8vw;  bottom:4vh; --fs:24vw;" aria-hidden="true">章</div>
+
+    <p class="text-body">有的时候，我们讨论“元素”。</p>
+
+    <nav class="links" aria-label="Sections">
+      <a class="link-row" href="https://yyz.elecide.com" data-en="YYZIP">空想压缩</a>
+      <a class="link-row" href="https://elecode.wiki" data-en="WIKI">元素编码</a>
+      <a class="link-row" href="https://elecode.wiki/log" data-en="LOG">元素记录</a>
+      <a class="link-row" href="https://elecode.wiki/118" data-en="118CR">元素聊天室</a>
+    </nav>
+
+  </section>
+
+  <section class="panel" data-panel="fate" id="panel-fate">
+    <div class="watermark" style="--o:.018; --d:-7s;  left:4vw;  bottom:6vh; --fs:30vw;" aria-hidden="true">卜</div>
+    <div class="watermark" style="--o:.011; --d:-16s; right:5vw; top:6vh;    --fs:26vw;" aria-hidden="true">筮</div>
+
+    <p class="text-body">为什么是“FATE”呢，很奇怪吧。</p>
+
+    <nav class="links" aria-label="Sections">
+      <a class="link-row" data-en="DAILY">元素占卜</a>
+      <a class="link-row" data-en="TAROT">元素塔罗</a>
+    </nav>
+  </section>
+
+  <section class="panel" data-panel="game" id="panel-game">
+    <div class="watermark" style="--o:.022; --d:-11s; right:4vw;  bottom:6vh; --fs:30vw;" aria-hidden="true">游</div>
+    <div class="watermark" style="--o:.014; --d:-2s;  left:10vw; top:6vh;     --fs:20vw;" aria-hidden="true">戏</div>
+
+    <p class="text-body">消失了……还是本来就不存在呢。</p>
+  </section>
+
+  <section class="panel" data-panel="tool" id="panel-tool">
+    <div class="watermark" style="--o:.017; --d:-19s; left:4vw; bottom:6vh; --fs:28vw;" aria-hidden="true">工</div>
+    <div class="watermark" style="--o:.020; --d:-4s; right:4vw;  top:4vh;   --fs:32vw;" aria-hidden="true">具</div>
+
+    <p class="text-body">基本上是个人需求。</p>
+
+    <nav class="links" aria-label="Sections">
+      <a class="link-row" data-en="FGO-STUDENT">FGO学生卡</a>
+    </nav>
+
+  </section>
+
+  <section class="panel" data-panel="misc" id="panel-misc">
+    <div class="watermark" style="--o:.016; --d:-3s; right:4vw; top:6vh; --fs:28vw;" aria-hidden="true">杂</div>
+
+    <p class="text-body">其他东西。</p>
+
+    <nav class="links" aria-label="Sections">
+      <a class="link-row" href="https://elecode.wiki/map" data-en="MAP">元素关系</a>
+      <a class="link-row" href="https://elecode.wiki/ecd" data-en="ECD">元素立绘</a>
+    </nav>
+
+  </section>
+
+</main>
+
+<nav class="side-nav is-home" id="side-nav" aria-label="Section navigation">
+  <ul class="side-nav__list" id="nav-list">
+    <li>
+      <a class="nav-item is-active" data-target="intro" href="#panel-intro">
+        <span class="nav-item__bar"></span>
+        <span class="nav-item__cn glitch" data-text="悖滅">悖滅</span>
+        <span class="nav-item__en">ELECIDE</span>
+      </a>
+    </li>
+    <li>
+      <a class="nav-item" data-target="text" href="#panel-text">
+        <span class="nav-item__bar"></span>
+        <span class="nav-item__cn glitch" data-text="文章">文章</span>
+        <span class="nav-item__en">TEXT</span>
+      </a>
+    </li>
+    <li>
+      <a class="nav-item" data-target="fate" href="#panel-fate">
+        <span class="nav-item__bar"></span>
+        <span class="nav-item__cn glitch" data-text="卜筮">卜筮</span>
+        <span class="nav-item__en">FATE</span>
+      </a>
+    </li>
+    <li>
+      <a class="nav-item" data-target="game" href="#panel-game">
+        <span class="nav-item__bar"></span>
+        <span class="nav-item__cn glitch" data-text="遊戯">遊戯</span>
+        <span class="nav-item__en">GAME</span>
+      </a>
+    </li>
+    <li>
+      <a class="nav-item" data-target="tool" href="#panel-tool">
+        <span class="nav-item__bar"></span>
+        <span class="nav-item__cn glitch" data-text="道具">道具</span>
+        <span class="nav-item__en">TOOL</span>
+      </a>
+    </li>
+    <li>
+      <a class="nav-item" data-target="misc" href="#panel-misc">
+        <span class="nav-item__bar"></span>
+        <span class="nav-item__cn glitch" data-text="拾遗">拾遗</span>
+        <span class="nav-item__en">MISC</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<button class="nav-toggle is-home" id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+
+<button class="back-top" id="back-top" type="button" aria-label="返回顶部">上</button>
+
+<footer class="stage-footer">
+  © 2016-2026 由野哉 / ELECODE PROJECT
+</footer>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" id="scanlines" aria-hidden="true"></div>
+<div class="crt" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="trail" id="trail" aria-hidden="true"></div>
+<div class="secret" id="secret" aria-hidden="true"></div>
+
+<script src="assets/js/home.js"></script>
+</body>
+</html>
